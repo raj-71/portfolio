@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base{
+    body{
+        @apply font-[Montserrat]
+    }
+    
+    li{
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+}
+
+@layer utilities {
+	.text-gradient-custom {
+		background: linear-gradient(to right, #2926f8 10%, #A020F0 90%);
+		/* Adjust the color stops as needed */
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+    .text2-gradient-custom {
+        background: linear-gradient(to right, #2926f8 10%, #A020F0 90%);
+        -webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+    }
+
+    .button-gradient-custom {
+        background: linear-gradient(90deg, rgba(24,28,128,1) 0%, rgba(29,28,155,1) 40%, rgba(74,32,240,1) 100%);
+    }
+
+    .border-gradient-custom {
+        border-image-slice: 1;
+        border-image-source: linear-gradient(90deg, rgba(24,28,128,1) 0%, rgba(29,28,155,1) 40%, rgba(74,32,240,1) 100%);
+    }
+}
